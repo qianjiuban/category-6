@@ -6,8 +6,7 @@
 
 .header {
     width: 100%;
-    height: 180px;
-    border-bottom: 2px solid red;
+    height: 130px;
 }
 
 ul li {
@@ -46,6 +45,14 @@ ul li {
     position: relative;
     border-right: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
+}
+
+.header-icon i {
+    font-size: 20px;
+    color: #f42424;
+    float: left;
+    height: 26px;
+    margin-top: 2px;
 }
 
 .header-zen {
@@ -87,6 +94,7 @@ ul li {
     z-index: 5;
     border: 1px solid #ccc;
     display: none;
+    z-index: 9999;
 }
 
 .header-top span {
@@ -200,7 +208,7 @@ ul li {
     width: 7px;
     height: 130px;
     position: relative;
-    background: url(../images/) -7px 0 repeat-y;
+    background: url(../images/change_city.png) -7px 0 repeat-y;
     top: 5px;
 }
 
@@ -266,7 +274,7 @@ ul li {
 
 .header-nav {
     width: 1200px;
-    height: 160px;
+    height: 100px;
     margin: 0 auto;
 }
 
@@ -403,14 +411,12 @@ ul li {
 
 .header-fore1 {
     position: absolute;
-    top: 0px;
     width: 106px;
     height: 118px;
     border-right: 1px solid #ccc;
 }
 
 .header-fore2 {
-    top: 0px;
     right: 5px;
     position: absolute;
     width: 252px;
