@@ -305,7 +305,7 @@
 .side-con-bottom .kf {
     width: 18px;
     height: 18px;
-    top: 11px;
+    top: 15px;
     left: 11px;
     background-position: -1px -174px;
 }
@@ -328,7 +328,7 @@
 
 .side-con-top .cart_list {
     line-height: 16px;
-    height: 133px;
+    height: 120px;
     background-position: -23px -225px;
     color: #fff;
     margin: 10px 0;

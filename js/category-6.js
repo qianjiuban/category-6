@@ -1,8 +1,9 @@
+var palyID;
 // 轮播图的淡入淡出效果
 function autoplay() {
     var i = 0;
     // 间歇显示效果
-    setInterval(function() {
+    var palyID = setInterval(function() {
         // 控制大图
         $('.banner-item-list').eq(i).animate({
             opacity: 1
@@ -21,6 +22,19 @@ function autoplay() {
     }, 3000);
 }
 autoplay();
+$('.banner-wrapper-nlist li').hover(function() {
+    clearInterval(palyID);
+    var index = $(this).index();
+    // 控制大图
+    $('.banner-item-list').eq(index).animate({
+        opacity: 1
+    }, 300);
+    $('.banner-item-list').eq(index).siblings().animate({
+        opacity: 0
+    }, 300);
+    // 控制滑块
+    $('.banner-wrapper-nlist li').eq(index).addClass('banner-wrapper-active').siblings().removeClass('banner-wrapper-active');
+});
 // 楼层显示
 var secDisTop = $('.limit-n').offset().top;
 // 绑定鼠标滚动事件
